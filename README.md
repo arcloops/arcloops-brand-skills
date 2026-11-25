@@ -17,16 +17,16 @@ skills/arcloops-brand/
 package.sh             builds a zip for claude.ai upload
 ```
 
-## Install (team members)
+## Install (anyone)
 
 **Claude Code or Cowork (recommended):**
 ```
 /plugin marketplace add <your-github-org>/arcloops-brand-skills
 /plugin install arcloops-brand@arcloops-skills
 ```
-Updates arrive when the repo changes (`/plugin marketplace update`).
+No GitHub login is needed because the repo is public. Updates arrive when the repo changes (`/plugin marketplace update`).
 
-**Claude.ai / desktop app:** run `./package.sh`, then upload `arcloops-brand.zip` in Settings > Capabilities > Skills. Repeat when the skill changes.
+**Claude.ai / desktop app:** download `arcloops-brand.zip` from the latest [Release](../../releases/latest) (or build it with `./package.sh`), then upload it in Settings > Capabilities > Skills. Repeat when the skill changes. Do not use GitHub's "Download ZIP" button: the folder layout will be wrong.
 
 **Manual (Claude Code):** copy `skills/arcloops-brand` into `~/.claude/skills/`.
 
