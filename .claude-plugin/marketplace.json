@@ -1,0 +1,11 @@
+{
+  "name": "arcloops-skills",
+  "owner": { "name": "Arcloops" },
+  "plugins": [
+    {
+      "name": "arcloops-brand",
+      "source": "./",
+      "description": "Arcloops brand skill: colors, typography, logos, voice and layout rules."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arcloops one-pager</title>
+<style>
+{{FONTS}}
+{{TOKENS}}
+*{box-sizing:border-box;margin:0}
+body{font-family:var(--font-body);font-size:var(--text-body);line-height:var(--lh-body);color:var(--color-text-body);background:var(--color-white)}
+.page{max-width:880px;margin:0 auto;padding:56px 48px;position:relative;overflow:hidden}
+.texture{position:absolute;right:-90px;top:-30px;width:420px;opacity:.07;pointer-events:none}
+.texture svg{width:100%;height:auto}
+.logo{width:180px;margin-bottom:72px}.logo svg{width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--font-heading);color:var(--color-text-body)}
+h1{font-size:var(--text-display);line-height:var(--lh-display);font-weight:700;max-width:640px}
+.lede{font-size:18px;color:var(--color-text-muted);max-width:600px;margin-top:16px}
+hr{border:0;border-top:1px solid var(--color-border);margin:40px 0}
+.band{background:var(--color-surface-quiet);padding:32px;margin:40px 0}
+h2{font-size:var(--text-h2);line-height:var(--lh-h2);font-weight:700;margin-bottom:16px}
+h3{font-size:var(--text-h3);line-height:var(--lh-h3);font-weight:600;margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.num{font-family:var(--font-heading);font-weight:700;font-size:var(--text-h1);color:var(--color-gray)}
+.caption{font-size:var(--text-caption);line-height:var(--lh-caption);color:var(--color-text-muted)}
+a{color:var(--color-text-body);text-decoration:underline}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.page{padding:32px 20px}}
+</style></head>
+<body><div class="page">
+<div class="texture">{{LOOP:black}}</div>
+<div class="logo">{{LOGO:01}}</div>
+<h1>Audit, consult, train, build.</h1>
+<p class="lede">One sentence on the outcome for this client, with a number and a named process.</p>
+<hr>
+<div class="grid">
+  <div><div class="num">A</div><h3>Advisory</h3><p>Sets the AI-readiness strategy.</p></div>
+  <div><div class="num">R</div><h3>Research</h3><p>Grounds every recommendation in the client's industry.</p></div>
+  <div><div class="num">C</div><h3>Consulting</h3><p>Trains teams and builds the systems.</p></div>
+</div>
+<div class="band"><h2>Scope</h2><p>Replace with the specific scope, timeline and deliverables.</p></div>
+<p class="caption">Arcloops · <a href="https://arcloops.io">arcloops.io</a> · hello@arcloops.io</p>
+</div></body></html>
