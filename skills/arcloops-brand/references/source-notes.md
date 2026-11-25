@@ -9,7 +9,10 @@ Two PDFs are in `source/`:
 | Topic | Disagreement | Rule in the skill |
 |---|---|---|
 | Logo on dark | v1 says dark surfaces always take the solid white lockup. v2 allows the white-wordmark + color-loop lockup (-02) on dark hero surfaces. | Follow v2: -02 for dark hero only, -03 for other dark surfaces. |
-| Logo on color | The designer deck's "Color Variant" page shows white-wordmark lockups on cyan and magenta panels. The written rules say cyan/magenta/amber are never a background. | Treat those panels as logo-variant specimens only. Do not use cyan, magenta or amber as page, slide or UI backgrounds. Confirm with the brand owner before using them for any campaign asset. |
+| Logo on color | The designer deck's "Color Variant" page shows white-wordmark lockups on cyan and magenta panels. The written v1 rules said cyan/magenta/amber are only ever the loop. | **Decided by the brand owner (Nov 2026): brand colors may be used as solid fields, buttons, highlights, numerals and chart series.** Logo `-03` on cyan and magenta, `-04` on amber. |
+| Colored type | v1's own typography page colors the A / R / C letters cyan, magenta and amber, but the rules say never color type. | Large display letters and numerals may be colored. Reading text stays charcoal or white. |
+| Ratio | v1 says 90% neutral / 10% color. | Neutrals still dominate (about 70%), with deliberate color on every screen. |
+| Status colors | None defined. | Proposed: info cyan, success cyan with check, warning amber, error magenta, always with icon and label. Needs owner confirmation. |
 | Amber RGB | The deck prints amber as RGB 252, 282, 63. 282 is impossible. | Use #FCB53F = RGB 252, 181, 63 (matches v1). |
 | Heading font in deck | The Inter specimen page shows Inter headings. | Headings are Geist; Inter is body/UI. |
 | Icon mark | v1 lists a 32px / 8mm minimum for an icon mark, but no icon file exists. | Do not create an icon. Ask the brand owner. |

@@ -14,11 +14,13 @@ h1,h2,h3{font-family:var(--font-heading);color:var(--color-text-body)}
 h1{font-size:var(--text-display);line-height:var(--lh-display);font-weight:700;max-width:640px}
 .lede{font-size:18px;color:var(--color-text-muted);max-width:600px;margin-top:16px}
 hr{border:0;border-top:1px solid var(--color-border);margin:40px 0}
-.band{background:var(--color-surface-quiet);padding:32px;margin:40px 0}
+.band{background:var(--tint-cyan);border-left:4px solid var(--color-cyan);padding:32px;margin:40px 0}
 h2{font-size:var(--text-h2);line-height:var(--lh-h2);font-weight:700;margin-bottom:16px}
 h3{font-size:var(--text-h3);line-height:var(--lh-h3);font-weight:600;margin-bottom:6px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.num{font-family:var(--font-heading);font-weight:700;font-size:var(--text-h1);color:var(--color-gray)}
+.num{font-family:var(--font-heading);font-weight:700;font-size:56px;line-height:1}
+.n1{color:var(--color-cyan)}.n2{color:var(--color-magenta)}.n3{color:var(--color-amber)}
+.rule{height:4px;background:var(--gradient-loop);margin:0 0 40px}
 .caption{font-size:var(--text-caption);line-height:var(--lh-caption);color:var(--color-text-muted)}
 a{color:var(--color-text-body);text-decoration:underline}
 @media(max-width:700px){.grid{grid-template-columns:1fr}.page{padding:32px 20px}}
@@ -28,11 +30,11 @@ a{color:var(--color-text-body);text-decoration:underline}
 <div class="logo">{{LOGO:01}}</div>
 <h1>Audit, consult, train, build.</h1>
 <p class="lede">One sentence on the outcome for this client, with a number and a named process.</p>
-<hr>
+<div class="rule"></div>
 <div class="grid">
-  <div><div class="num">A</div><h3>Advisory</h3><p>Sets the AI-readiness strategy.</p></div>
-  <div><div class="num">R</div><h3>Research</h3><p>Grounds every recommendation in the client's industry.</p></div>
-  <div><div class="num">C</div><h3>Consulting</h3><p>Trains teams and builds the systems.</p></div>
+  <div><div class="num n1">A</div><h3>Advisory</h3><p>Sets the AI-readiness strategy.</p></div>
+  <div><div class="num n2">R</div><h3>Research</h3><p>Grounds every recommendation in the client's industry.</p></div>
+  <div><div class="num n3">C</div><h3>Consulting</h3><p>Trains teams and builds the systems.</p></div>
 </div>
 <div class="band"><h2>Scope</h2><p>Replace with the specific scope, timeline and deliverables.</p></div>
 <p class="caption">Arcloops · <a href="https://arcloops.io">arcloops.io</a> · hello@arcloops.io</p>

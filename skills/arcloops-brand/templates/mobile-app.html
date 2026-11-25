@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arcloops mobile screens</title>
+<style>
+{{FONTS}}
+{{TOKENS}}
+*{box-sizing:border-box;margin:0}
+body{font-family:var(--font-body);font-size:16px;line-height:1.5;color:var(--color-text-body);background:var(--color-surface-quiet);padding:40px 16px}
+h1,h2,h3,.num{font-family:var(--font-heading);font-weight:700}
+.row{display:flex;gap:32px;justify-content:center;flex-wrap:wrap}
+.cap{text-align:center;font-size:12px;color:var(--color-text-muted);margin-top:12px}
+.phone{width:390px;height:780px;border-radius:44px;border:10px solid var(--color-charcoal);background:var(--color-white);overflow:hidden;position:relative;display:flex;flex-direction:column}
+.status{height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 24px;font-size:12px;font-weight:600}
+.dark{background:var(--color-charcoal);color:var(--color-white)}
+.btn{display:block;width:100%;text-align:center;font-family:var(--font-heading);font-weight:600;font-size:18px;padding:16px;border-radius:var(--radius-md);border:0}
+.cyan{background:var(--color-cyan);color:var(--color-charcoal)}.mag{background:var(--color-magenta);color:var(--color-white)}.chr{background:var(--color-charcoal);color:var(--color-white)}
+.ghost{background:transparent;color:var(--color-white);border:1px solid rgba(255,255,255,.5)}
+/* screen 1: welcome */
+.s1 .art{position:absolute;left:-60px;top:70px;width:520px}.s1 .art svg{width:100%;height:auto;display:block}
+.s1 .logo{position:absolute;left:28px;top:60px;width:130px}.s1 .logo svg{width:100%;height:auto;display:block}
+.s1 .bottom{position:absolute;left:24px;right:24px;bottom:32px}
+.s1 h1{font-size:40px;line-height:1.05;margin-bottom:12px}.s1 p{color:var(--color-border);margin-bottom:24px}
+/* screen 2: home */
+.s2 .body{padding:8px 20px 0;flex:1;overflow:hidden}
+.s2 h2{font-size:28px;line-height:1.2}.s2 .sub{color:var(--color-text-muted);margin-bottom:16px}
+.card{border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:16px;margin-bottom:12px;background:var(--color-white)}
+.hero{border:1px solid var(--color-border);position:relative;padding:18px 16px 16px}
+.hero:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--gradient-loop)}
+.hero .l{font-size:12px;color:var(--color-text-muted)}.hero .v{font-size:40px;line-height:1.1}
+.list .it{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--color-border)}
+.dot{width:10px;height:10px;border-radius:50%}
+.it .t{flex:1}.it .t small{display:block;color:var(--color-text-muted);font-size:12px}
+.tab{display:flex;border-top:1px solid var(--color-border);padding:6px 0 18px}
+.tab div{flex:1;text-align:center;font-size:12px;padding-top:8px;position:relative;color:var(--color-text-muted)}
+.tab div.on{color:var(--color-charcoal);font-weight:600}.tab div.on:before{content:"";position:absolute;top:0;left:30%;right:30%;height:3px;background:var(--color-cyan)}
+.tab span{display:flex;justify-content:center;margin-bottom:2px}
+/* screen 3: detail */
+.s3 .top{background:var(--color-amber);color:var(--color-charcoal);padding:12px 24px 28px}
+.s3 .top h2{font-size:32px;line-height:1.15;margin-top:12px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:600;background:var(--color-white);color:var(--color-charcoal)}
+.chip b{width:8px;height:8px;border-radius:50%;background:var(--color-charcoal);display:inline-block}
+.s3 .body{padding:20px 24px;flex:1}
+.kv{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--color-border)}.kv span:first-child{color:var(--color-text-muted)}
+.s3 .sticky{padding:16px 24px 28px;border-top:1px solid var(--color-border)}
+</style></head>
+<body><div class="row">
+
+<div><div class="phone dark s1"><div class="status"><span>9:41</span><span>●●●</span></div>
+<div class="logo">{{LOGO:03}}</div><div class="art">{{LOOP:color}}</div>
+<div class="bottom"><h1>Run your business on AI.</h1><p>Sample copy: audit, consult, train, build.</p>
+<a class="btn cyan" style="margin-bottom:12px">Get started</a><a class="btn ghost">I have an account</a></div></div>
+<div class="cap">Welcome: signature moment on charcoal</div></div>
+
+<div><div class="phone s2"><div class="status"><span>9:41</span><span>●●●</span></div>
+<div class="body"><h2>Good morning</h2><div class="sub">Here is today across your projects.</div>
+<div class="card hero"><div class="l">Open proposals</div><div class="v num">7</div><div class="l">▲ 2 this week</div></div>
+<div class="list">
+<div class="it"><i class="dot" style="background:var(--color-cyan)"></i><div class="t">CRM rollout<small>In progress</small></div>›</div>
+<div class="it"><i class="dot" style="background:var(--color-amber)"></i><div class="t">Training batch 4<small>Awaiting approval</small></div>›</div>
+<div class="it"><i class="dot" style="background:var(--color-magenta)"></i><div class="t">ERP audit<small>Blocked</small></div>›</div>
+</div></div>
+<div class="tab"><div class="on"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg></span>Home</div><div><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 6h7l2 2h9v11H3z"/></svg></span>Projects</div><div><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Reports</div><div><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>Profile</div></div></div>
+<div class="cap">Home: neutral base, gradient hairline, status dots</div></div>
+
+<div><div class="phone s3"><div class="status" style="background:var(--color-amber)"><span>9:41</span><span>●●●</span></div>
+<div class="top"><span class="chip"><b></b>Awaiting approval</span><h2>Training batch 4</h2></div>
+<div class="body"><div class="kv"><span>Client</span><span>Client B</span></div><div class="kv"><span>Seats</span><span class="num">120</span></div><div class="kv"><span>Starts</span><span>12 Dec</span></div><div class="kv"><span>Value</span><span class="num">$12,500</span></div></div>
+<div class="sticky"><a class="btn mag">Approve batch</a></div></div>
+<div class="cap">Detail: amber header, magenta primary action</div></div>
+
+</div></body></html>

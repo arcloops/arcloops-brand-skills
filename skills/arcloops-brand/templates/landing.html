@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arcloops</title>
+<style>
+{{FONTS}}
+{{TOKENS}}
+*{box-sizing:border-box;margin:0}
+body{font-family:var(--font-body);font-size:var(--text-body);line-height:var(--lh-body);color:var(--color-text-body);background:var(--color-white)}
+h1,h2,h3{font-family:var(--font-heading);font-weight:700}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+nav{border-bottom:1px solid var(--color-border)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+nav .logo{width:150px;flex:none}nav .logo svg{width:100%;height:auto;display:block}
+nav ul{display:flex;gap:32px;list-style:none;padding:0;font-size:14px}
+.btn{display:inline-block;font-family:var(--font-heading);font-weight:600;font-size:16px;padding:14px 24px;border-radius:var(--radius-sm);text-decoration:none;border:1px solid transparent}
+.btn.cyan{background:var(--color-cyan);color:var(--color-charcoal)}
+.btn.dark{background:var(--color-charcoal);color:var(--color-white)}
+.btn.ghost{border-color:rgba(255,255,255,.5);color:var(--color-white)}
+.btn.mag{background:var(--color-magenta);color:var(--color-white);font-size:18px}
+.hero{background:var(--color-charcoal);color:var(--color-white);position:relative;overflow:hidden}
+.hero .wrap{padding-top:104px;padding-bottom:120px;position:relative;z-index:1}
+.hero h1{font-size:72px;line-height:1.02;max-width:640px;letter-spacing:-.02em}
+.hero p{font-size:20px;color:var(--color-border);max-width:520px;margin:24px 0 36px}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .art{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:760px}
+.hero .art svg{width:100%;height:auto;display:block}
+.rule{height:4px;background:var(--gradient-loop)}
+.eyebrow{font-family:var(--font-heading);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted)}
+section{padding:96px 0}
+section h2{font-size:40px;line-height:1.1;margin:12px 0 48px;max-width:700px}
+.arc{display:grid;grid-template-columns:repeat(3,1fr)}
+.arc>div{padding:40px 32px 48px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between}
+.arc .l{font-family:var(--font-heading);font-weight:700;font-size:120px;line-height:1}
+.arc h3{font-size:24px;margin-bottom:8px}
+.p1{background:var(--color-cyan);color:var(--color-charcoal)}
+.p2{background:var(--color-magenta);color:var(--color-white)}.p2 p{font-size:18px;font-weight:500}
+.p3{background:var(--color-amber);color:var(--color-charcoal)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.steps>div{border-top:3px solid var(--color-charcoal);padding-top:20px}
+.steps>div:nth-child(1){border-color:var(--color-cyan)}.steps>div:nth-child(2){border-color:var(--color-magenta)}.steps>div:nth-child(3){border-color:var(--color-amber)}
+.steps .n{font-family:var(--font-heading);font-weight:700;font-size:40px;color:var(--color-gray)}
+.band{background:var(--color-surface-quiet)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.stats .v{font-family:var(--font-heading);font-weight:700;font-size:56px;line-height:1}
+.stats .v.c{color:var(--color-magenta)}
+.stats .cap{font-size:12px;line-height:1.4;color:var(--color-text-muted);margin-top:8px}
+.cta{background:var(--color-magenta);color:var(--color-white);padding:88px 0}
+.cta h2{font-size:48px;max-width:760px;margin:0 0 32px}
+.cta .btn.dark{border-color:var(--color-charcoal)}
+footer{background:var(--color-charcoal);color:var(--color-white);padding:56px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer .logo{width:150px;flex:none}footer .logo svg{width:100%;height:auto;display:block}
+footer small{font-size:12px;color:var(--color-gray)}
+@media(max-width:860px){.hero h1{font-size:44px}.hero .art{opacity:.35;right:-260px}.arc,.steps,.stats{grid-template-columns:1fr}nav ul{display:none}}
+</style></head>
+<body>
+<nav><div class="wrap"><div class="logo">{{LOGO:01}}</div>
+<ul><li>Advisory</li><li>Research</li><li>Consulting</li><li>Training</li></ul>
+<a class="btn dark" href="#">Book an audit</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="eyebrow" style="color:var(--color-cyan)">AI advisory, research, consulting</div>
+<h1 style="margin-top:16px">From AI idea to production.</h1>
+<p>We audit your workflows, train your team, and build the systems that run them. Sample copy: replace with the client outcome and a number.</p>
+<div class="actions"><a class="btn cyan" href="#">Book an audit</a><a class="btn ghost" href="#">See how we work</a></div>
+</div><div class="art">{{LOOP:color}}</div></header>
+<div class="rule"></div>
+
+<section><div class="wrap">
+<div class="eyebrow">Three practices</div>
+<h2>Advisory sets the strategy. Research proves it. Consulting builds it.</h2></div>
+<div class="arc">
+<div class="p1"><div class="l">A</div><div><h3>Advisory</h3><p>AI-readiness strategy for your industry.</p></div></div>
+<div class="p2"><div class="l">R</div><div><h3>Research</h3><p>Recommendations grounded in what works.</p></div></div>
+<div class="p3"><div class="l">C</div><div><h3>Consulting</h3><p>Teams trained, systems built.</p></div></div>
+</div></section>
+
+<section class="band"><div class="wrap">
+<div class="eyebrow">Process</div><h2>Audit, consult, train, build.</h2>
+<div class="steps">
+<div><div class="n">01</div><h3>Audit</h3><p>Map workflows and data.</p></div>
+<div><div class="n">02</div><h3>Consult</h3><p>Choose the use cases that pay back.</p></div>
+<div><div class="n">03</div><h3>Train</h3><p>Hands-on sessions for your team.</p></div>
+<div><div class="n">04</div><h3>Build</h3><p>Ship to production with your stack.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">Sample results</div><h2>Numbers over adjectives.</h2>
+<div class="stats">
+<div><div class="v">30</div><div class="cap">training batches delivered (sample)</div></div>
+<div><div class="v c">7</div><div class="cap">countries served (sample)</div></div>
+<div><div class="v">9→4</div><div class="cap">days to month-end close (sample)</div></div>
+<div><div class="v">24/7</div><div class="cap">agent coverage (sample)</div></div>
+</div></div></section>
+
+<div class="cta"><div class="wrap"><h2>Start with a two-week audit.</h2><a class="btn dark" href="#">Book an audit</a></div></div>
+<footer><div class="wrap"><div class="logo">{{LOGO:03}}</div><small>Arcloops · arcloops.io · hello@arcloops.io</small></div></footer>
+</body></html>

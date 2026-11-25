@@ -1,6 +1,6 @@
 # Arcloops Skills
 
-Team skill repo for Claude. It currently holds one skill, **arcloops-brand**, which teaches Claude our brand (Guidelines v2, September 2026): colors, Geist/Inter typography, logo files and rules, layout, and voice.
+Team skill repo for Claude. It currently holds one skill, **arcloops-brand**, which teaches Claude our brand (Guidelines v2, September 2026): the full color system (neutrals plus cyan, magenta and amber and the gradient loop), Geist/Inter typography, logo files and rules, UI/web/mobile patterns, and voice.
 
 ## What's inside
 
@@ -11,8 +11,8 @@ skills/arcloops-brand/
   assets/logo/         4 lockups, SVG + PNG (metadata stripped)
   assets/fonts/        Geist + Inter variable fonts (OFL)
   assets/tokens.css    design tokens (also tokens.json)
-  templates/           one-pager.html starter
-  references/          voice, applications, imagery prompts, source notes, source PDFs
+  templates/           one-pager, landing page, dashboard, mobile app screens (HTML)
+  references/          UI patterns, voice, applications, imagery prompts, source notes, source PDFs
   scripts/             brand_check.py, strip_svg_metadata.py, inline_assets.py
 package.sh             builds a zip for claude.ai upload
 ```
@@ -43,17 +43,17 @@ Ask Claude for anything Arcloops-branded ("make a one-pager for the Beximco prop
 
 ## Brand check
 
-`python3 skills/arcloops-brand/scripts/brand_check.py page.html` flags off-palette hexes, loop colors used outside the logo, non-brand fonts and hype words.
+`python3 skills/arcloops-brand/scripts/brand_check.py page.html` errors on off-palette hexes, non-brand fonts and hype words, and warns on cyan/amber used as text, shadows and gradients out of order.
 
 ## Build a branded page
 
 ```
-python3 skills/arcloops-brand/scripts/inline_assets.py skills/arcloops-brand/templates/one-pager.html out.html
+python3 skills/arcloops-brand/scripts/inline_assets.py skills/arcloops-brand/templates/landing.html out.html
 ```
-Produces one self-contained HTML file (fonts and logo inlined).
+Templates: `one-pager`, `landing`, `dashboard`, `mobile-app`. Produces one self-contained HTML file (fonts and logos inlined, ids scoped so several logos can share a page).
 
 ## Notes
 
 - Geist and Inter are licensed under the SIL OFL (see `assets/fonts/OFL.txt`).
 - Source `.ai` files are intentionally not committed (see `.gitignore`).
-- Open design gaps: no standalone icon vector, no functional/status colors, no photography direction, no motion spec.
+- Open design gaps: no standalone icon vector, status colors are a proposed extension, no photography direction, no motion spec.
